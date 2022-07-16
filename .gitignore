@@ -4,3 +4,13 @@ android/app/build/
 android/.gradle/
 package-lock.json
 yarn.lock
+npm-debug.log
+
+
+# OSX
+#
+.DS_Store
+
+# CocoaPods
+/ios/Pods/
+/ios/Podfile.lock
