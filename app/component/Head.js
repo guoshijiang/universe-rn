@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import {
-  View,
   Text,
   TouchableHighlight,
   Image,
   StyleSheet,
   StatusBar,
   Dimensions,
+    // View
 } from 'react-native';
 import {headerHeight, statusBarHei} from '../config';
+import {View} from "react-native-ui-lib";
 
 const {height, width} = Dimensions.get('window');
 export default class Header extends Component {
@@ -16,11 +17,12 @@ export default class Header extends Component {
     super(props);
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+  }
 
   render() {
     return (
-      <View>
+      <View useSafeArea>
         <StatusBar translucent={false} backgroundColor='#fff' barStyle="dark-content" />
         <View style={[styles.wrap]}>
           <Text
