@@ -12,5 +12,5 @@ npm-debug.log
 .DS_Store
 
 # CocoaPods
-/ios/Pods/
-/ios/Podfile.lock
+ios/Pods/
+ios/Podfile.lock
