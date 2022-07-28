@@ -1,0 +1,17 @@
+{
+    "function_description_number":"this is todo description",
+
+    "button_close": "关闭",
+    "button_confirm": "确定",
+    "button_cancel": "取消",
+
+    "wallet_name_title": "设置钱包名称",
+    "wallet_name_placeholder": "请输入钱包名称",
+
+    "password_verify_title": "验证密码",
+    "password_verify_placeholder": "请输入钱包密码",
+
+    "wallet_add_create": "创建",
+    "wallet_add_import": "导入",
+
+}
