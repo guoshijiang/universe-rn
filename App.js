@@ -1,15 +1,20 @@
-import * as React from 'react';
-import {View, Text} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import Route from './app/route';
-import Toast from 'react-native-toast-message';
+import React from 'react';
+import {Provider} from 'react-redux';
+import configureStore from "./app/store";
+import Mobile from "./mobile";
+import {PersistGate} from 'redux-persist/integration/react'
+// import '../shim';
+import "./app/resources";
+
+const {store, persistor} = configureStore();
 
 function App() {
   return (
-    <NavigationContainer>
-      <Route />
-      <Toast position="bottom" bottomOffset={40} />
-    </NavigationContainer>
+      <Provider store={store}>
+          <PersistGate loding={null} persistor={persistor}>
+              <Mobile/>
+          </PersistGate>
+      </Provider>
   );
 }
 
