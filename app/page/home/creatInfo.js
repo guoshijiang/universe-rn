@@ -39,7 +39,6 @@ function CreatInfo({navigation, route}) {
   };
 
   const handlePageWord = () => {
-    console.log(111)
     navigation.navigate('BakupWord', {
       bId,
       name: form.name,
@@ -80,13 +79,13 @@ function CreatInfo({navigation, route}) {
           />
         </View>
         <TouchableOpacity style={styles.warn} onPress={()=>setCheked(c=>!c)}>
-          <Image 
-            style={styles.checked} 
-            source={cheked?require('../../assets/checked.png'):require('../../assets/unchecked.png')} 
+          <Image
+            style={styles.checked}
+            source={cheked?require('../../assets/checked.png'):require('../../assets/unchecked.png')}
           />
           <Text>我已阅读并同意</Text><Text style={styles.link}>《用户协议》</Text><Text>以及</Text><Text style={styles.link}>《隐私政策》</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={handlePageWord} 
+        <TouchableOpacity onPress={handlePageWord}
           style={{...styles.btn, backgroundColor: status?'#4C6EF5':'#94A9FF'}}
         >
           <Text style={{color:'#fff',fontSize:16}}>创建钱包</Text>

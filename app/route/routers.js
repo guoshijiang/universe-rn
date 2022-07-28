@@ -3,6 +3,7 @@ import * as React from 'react';
 import HomeTab from '../page/tab/home';
 import MyTab from '../page/tab/my';
 import NewsTab from '../page/tab/news';
+import DAppTab from '../page/tab/dapp';
 
 
 // HOME
@@ -29,7 +30,7 @@ import Means from '../page/my/means';
 export const tabs = [
     {name: '首页', comp: HomeTab, key: 'home', src: require('../assets/tabbar/home.png'), activeSrc: require('../assets/tabbar/home-active.png')},
     {name: '行情', comp: NewsTab, key: 'hq', src: require('../assets/tabbar/hq.png'), activeSrc: require('../assets/tabbar/hq-active.png')},
-    {name: '发现', comp: NewsTab, key: 'fx', src: require('../assets/tabbar/fx.png'), activeSrc: require('../assets/tabbar/fx-active.png')},
+    {name: '发现', comp: DAppTab, key: 'fx', src: require('../assets/tabbar/fx.png'), activeSrc: require('../assets/tabbar/fx-active.png')},
     {name: '我的', comp: MyTab, key: 'my', src: require('../assets/tabbar/my.png'), activeSrc: require('../assets/tabbar/my-active.png')},
 ]
 
